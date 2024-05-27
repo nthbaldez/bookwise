@@ -1,7 +1,19 @@
+import Image from 'next/image'
+import LoginSection from './components/LoginSection'
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Hello World</h1>
+    <main className="h-full w-full flex flex-row items-center text-white">
+      <section className="h-auto text-white m-5">
+        <Image
+          src="/hero.png"
+          width={598}
+          height={300}
+          alt=""
+          className="max-h-full"
+        />
+      </section>
+
+      <LoginSection />
     </main>
   )
 }
