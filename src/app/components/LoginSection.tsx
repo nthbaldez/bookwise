@@ -7,7 +7,7 @@ export default function LoginSection() {
   const router = useRouter()
 
   return (
-    <section className="h-full flex-1">
+    <section className="h-full flex-1 flex items-center">
       <div className="flex flex-col gap-10 mx-auto w-[372px]">
         <div>
           <h1 className="text-lg text-gray-100">Boas vindas</h1>
