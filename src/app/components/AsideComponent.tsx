@@ -14,7 +14,6 @@ enum Pages {
 export default function AsideComponent() {
   const page = usePathname()
 
-  console.log(page)
   return (
     <aside className="m-5 bg-gray-700 w-[232px] flex flex-col gap-16 items-center rounded-md pb-7">
       <Image
