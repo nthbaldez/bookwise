@@ -4,7 +4,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { twMerge } from 'tailwind-merge'
-import ButtonLogin from './ButtonLogin'
 
 enum Pages {
   'home' = '/home',
@@ -15,7 +14,7 @@ export default function AsideComponent() {
   const page = usePathname()
 
   return (
-    <aside className="m-5 bg-gray-700 w-[232px] flex flex-col gap-16 items-center rounded-md pb-7">
+    <div className="flex flex-col gap-16 items-center rounded-md m-5 bg-gray-700 w-[232px] pb-7">
       <Image
         src="/logo.png"
         alt=""
@@ -54,8 +53,6 @@ export default function AsideComponent() {
           </Link>
         </li>
       </ul>
-
-      <ButtonLogin />
-    </aside>
+    </div>
   )
 }

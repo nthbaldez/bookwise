@@ -21,7 +21,7 @@ export default function LoginSection() {
             className="w-full px-6 py-5 bg-gray-600 flex flex-row items-center gap-4 cursor-pointer rounded-md text-gray-200 hover:opacity-75"
             onClick={() =>
               signIn('google', {
-                callbackUrl: '/initial',
+                callbackUrl: '/home',
               })
             }
           >
@@ -32,7 +32,7 @@ export default function LoginSection() {
             className="w-full px-6 py-5 bg-gray-600 flex flex-row items-center gap-4 cursor-pointer rounded-md text-gray-200 hover:opacity-75"
             onClick={() =>
               signIn('github', {
-                callbackUrl: '/initial',
+                callbackUrl: '/home',
               })
             }
           >
@@ -46,7 +46,7 @@ export default function LoginSection() {
           </button>
           <button
             className="w-full px-6 py-5 bg-gray-600 flex flex-row items-center gap-4 cursor-pointer rounded-md text-gray-200 hover:opacity-75"
-            onClick={() => router.push('/initial')}
+            onClick={() => router.push('/home')}
           >
             <Image src="/RocketLaunch.png" width={32} height={32} alt="" />
             Acessar como visitante

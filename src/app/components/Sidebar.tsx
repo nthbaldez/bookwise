@@ -1,6 +1,6 @@
 import { getServerSession } from 'next-auth'
 import { redirect } from 'next/navigation'
-import AsideComponent from './AsideComponent'
+import AsideSessionProvider from '../contexts/AsideSessionProvider'
 
 export default async function Sidebar() {
   const session = await getServerSession()
@@ -9,5 +9,5 @@ export default async function Sidebar() {
     return redirect('/')
   }
 
-  return <AsideComponent />
+  return <AsideSessionProvider />
 }
