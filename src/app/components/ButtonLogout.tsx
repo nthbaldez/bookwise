@@ -13,7 +13,11 @@ export default function ButtonLogout(user: UserSessionProps) {
   return (
     <button
       className="flex items-center gap-3 text-gray-200 mt-auto hover:cursor-pointer hover:opacity-70"
-      onClick={() => signOut()}
+      onClick={() =>
+        signOut({
+          callbackUrl: '/',
+        })
+      }
     >
       {user.name} <Image src="/login.png" alt="" width={24} height={24} />
     </button>
