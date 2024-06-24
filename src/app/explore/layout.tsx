@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Sidebar from '../components/Sidebar'
 
 export const metadata: Metadata = {
-  title: 'bookwise | início',
+  title: 'bookwise | explorar',
 }
 
 export default function RootLayout({
