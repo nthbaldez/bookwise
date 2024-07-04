@@ -1,4 +1,4 @@
-import { prisma } from '../prisma'
+import prisma from '../prisma'
 
 export default function MyAdapter(client, options = {}) {
   return {
